@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: #19181d;
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+}
+a {
+    color: inherit;
+}
+a:hover {
+    color: #7f8ff4;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.btn {
+    display: inline-block;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+}
+.logo img {
+    border-radius: 20px;
+}
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 300px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    letter-spacing: 2px;
+}
+.box .subtitle {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    letter-spacing: 14px;
+    color: #eeeeee;
+}
+.box .title {
+    letter-spacing: 30px;
+    font-family: 'Montserrat';
+    font-size: 50px;
+    font-weight: 800;
+    color: #fff;
+    margin-block-start: 15px;
+    margin-block-end: 40px;
+}
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10px;
+    width: 500px;
+    list-style: none;
+    padding: 0;
+}
+.load {
+  display: block;
+  float: left;
+  width: 90px;
+  height: 10px;
+  margin-right: 10px;
+  border-radius: 7px;
+}
+.load:nth-child(-n+3) {
+    background: rgba(255,255,255,0.9);
+    box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.5),
+                    0px 0px 20px rgba(117,182,214,0.5);
+}
+.load:nth-child(n+4) {
+    box-shadow: inset 0px 0px 10px 1px rgba(117,182,255,0.4),
+                    0px 0px 20px rgba(117,182,255,0.1);
+}
+.load:nth-child(3) {
+    animation: pulse .9s alternate infinite;
+    animation: pulse .9s alternate infinite;
+}
+@keyframes pulse {
+    0% {
+        background: rgba(255,255,255,1);
+        box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.5),
+                        0px 0px 40px 2px rgba(105,135,255,1);
+    }
+    100% {
+        background: rgba(255,255,255,0);
+        box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.5),
+                        0px 0px 30px 2px rgba(105,135,255,0.3);
+    }
+}
+@keyframes pulse {
+    0% {
+        background: rgba(255,255,255,1);
+        box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.5),
+                        0px 0px 40px 2px rgba(105,135,255,1);
+    }
+    100% {
+        background: rgba(255,255,255,0);
+        box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.5),
+                        0px 0px 30px 2px rgba(105,135,255,0.3);
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+footer p {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 15px;
+    padding: 10px 50px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #181818;
+}
